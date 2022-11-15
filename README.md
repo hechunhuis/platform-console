@@ -14,11 +14,11 @@ Java开发脚手架，目前还处于建设 阶段，后期会不断完善，项
 
 ```shell
 # 下载项目并进入根目录执行以下命令
-Maven 执行 mvn install
-Maven执行mvn idea:idea
-用idea打开，并选择父工程右键添加maven支持
-启动nacos server
-到Web工程下启动application.java
+1. Maven 执行 mvn install
+2. Maven 执行 mvn idea:idea
+3. 用idea打开，并选择父工程右键添加maven支持
+4. 启动nacos server
+5. 到Web工程下启动application.java
 ```
 项目中使用[Lombok](https://projectlombok.org/features/all)，IDEA开发需要安装Lombok插件
 
