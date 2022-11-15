@@ -1,0 +1,11 @@
+server:
+  port: 15001
+
+# 将必要的配置添加到文件
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+      health:
+        show-details: always
