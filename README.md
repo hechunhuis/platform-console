@@ -18,7 +18,7 @@ Maven 执行 mvn install
 Maven执行mvn idea:idea
 用idea打开，并选择父工程右键添加maven支持
 启动nacos server
-到Web工程下启动application.class
+到Web工程下启动application.java
 ```
 项目中使用[Lombok](https://projectlombok.org/features/all)，IDEA开发需要安装Lombok插件
 
