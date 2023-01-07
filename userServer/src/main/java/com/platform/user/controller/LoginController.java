@@ -1,16 +1,15 @@
 package com.platform.user.controller;
 
-import com.platform.user.config.NacosConfigInfo;
+import com.alibaba.csp.sentinel.annotation.SentinelResource;
+import com.alibaba.csp.sentinel.slots.block.BlockException;
+import com.platform.user.config.UserConfig;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
-
-import java.util.HashMap;
-import java.util.Map;
 
 /**
  * @author : tomato<hechunhui_email@163.com>
@@ -21,18 +20,25 @@ import java.util.Map;
 @RestController
 @Slf4j
 @RefreshScope
-public class LoginController extends BaseController{
+public class LoginController {
 
     @Autowired
-    private NacosConfigInfo nacosConfigInfo;
+    private UserConfig userConfig;
 
     @GetMapping
-    public Map<String, String> getConfigInfo() {
-        Map<String, String> result = new HashMap<>();
-        result.put("serverAddr", nacosConfigInfo.getServerAddr());
-        result.put("prefix", nacosConfigInfo.getPrefix());
-        result.put("group", nacosConfigInfo.getGroup());
-        result.put("namespace", nacosConfigInfo.getNamespace());
-        return result;
+    @ResponseBody
+    public String getConfigInfo() {
+        return userConfig.toString();
+    }
+
+    @GetMapping("/testHotKey")
+    @SentinelResource(value = "testHotKey", blockHandler = "dealTestHotKey")
+    public String testHostKey(@RequestParam(value = "param1", required = false) String param1,
+                              @RequestParam(value = "param2", required = false) String param2) {
+        log.info(String.format("/testHostKey param1:%s param2:%s", param1, param2));
+        return String.format("/testHostKey param1:%s param2:%s", param1, param2);
+    }
+    public String dealTestHotKey(String param1, String param2, BlockException blockException) {
+        return "服务挂了，非常抱歉,o(╥﹏╥)o";
     }
 }

@@ -1,18 +1,18 @@
 spring:
   application:
-    name: user-server
+    name: gateway-server
   cloud:
     nacos:
       discovery:
         server-addr: 127.0.0.1:8848
-        service: user-server
+        service: gateway-server
       config:
         server-addr: 127.0.0.1:8848
-#        namespace: public
-#        group: DEFAULT_GROUP
-#        name: user-server
+        #        namespace: public
+        #        group: DEFAULT_GROUP
+        #        name: user-server
         file-extension: yaml
-#        refresh-enabled: true
+        #        refresh-enabled: true
 
         ## recommended.
 #        shared-configs:
