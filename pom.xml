@@ -5,13 +5,15 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.platform.www</groupId>
-    <artifactId>platform</artifactId>
+    <artifactId>platform-console</artifactId>
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
     <modules>
-        <module>userServer</module>
-        <module>common</module>
-        <module>gatewayServer</module>
+        <module>platform-user</module>
+        <module>platform-gateway</module>
+        <module>platform-common</module>
+        <module>platform-common/common-elasticsearch</module>
+        <module>platform-common/common-core</module>
     </modules>
 
     <!-- 统一管理jar包版本 -->
