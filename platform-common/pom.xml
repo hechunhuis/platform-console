@@ -12,6 +12,14 @@
     <packaging>pom</packaging>
 
     <modules>
+        <module>common-core</module>
         <module>common-elasticsearch</module>
+        <module>common-file</module>
+        <module>common-log</module>
+        <module>common-mybatis</module>
+        <module>common-rabbitmq</module>
+        <module>common-redis</module>
+        <module>common-sms</module>
+        <module>common-web</module>
     </modules>
 </project>
