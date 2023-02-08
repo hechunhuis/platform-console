@@ -41,13 +41,13 @@ import java.util.Map;
  * @Version 1.0
  */
 @Service
-@RequiredArgsConstructor
+@RequiredArgsConstructor //生成必要参数的构造函数(必需的参数是最终字段和具有约束的字段，例如@NonNull)
 public class ElasticSearchService {
 
     private final RestHighLevelClient client;
 
 
-    @SneakyThrows
+    @SneakyThrows //当前方法抛出的异常，包装成RuntimeException，使得调用点可以不用显示处理异常信息。
     public long count(QueryBuilder queryBuilder, String... indices) {
         // 构造请求
         CountRequest countRequest = new CountRequest(indices);

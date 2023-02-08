@@ -12,7 +12,7 @@ import lombok.Data;
  * @Version 1.0
  */
 @Data
-@ApiModel
+@ApiModel(value = "基础分页请求对象")
 public class BasePageQuery {
 
     @ApiModelProperty(value = "页码", example = "1")

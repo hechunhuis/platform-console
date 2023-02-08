@@ -12,8 +12,8 @@ import java.io.Serializable;
  * @Date 2023/2/8 11:37
  * @Version 1.0
  */
-@AllArgsConstructor
-@NoArgsConstructor
+@AllArgsConstructor //自动构建包含所有参数的构造函数
+@NoArgsConstructor  //自动构建无参的构造函数
 public enum ResultCode implements IResultCode, Serializable {
 
     SUCCESS("00000", "一切ok"),

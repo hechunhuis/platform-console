@@ -1,3 +1,5 @@
+# maven中引用外部包加入容器
+# EnableAutoConfiguration 开启自动装配
 org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
   com.platform.common.elasticsearch.config.RestHighLevelClientConfig,\
   com.platform.common.elasticsearch.service.ElasticSearchService
