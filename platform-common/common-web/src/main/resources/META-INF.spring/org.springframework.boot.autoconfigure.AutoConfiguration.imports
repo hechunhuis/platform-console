@@ -1,0 +1,3 @@
+  com.platform.common.web.config.WebMvcConfig
+  com.platform.common.web.config.FeignConfig
+  com.platform.common.web.exception.GlobalExceptionHandler

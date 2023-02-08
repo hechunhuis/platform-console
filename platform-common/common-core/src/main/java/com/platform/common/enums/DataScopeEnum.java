@@ -10,7 +10,7 @@ import lombok.Getter;
  * @Date 2023/2/8 11:30
  * @Version 1.0
  */
-public enum DataPermissionEnum implements IBaseEnum<Integer> {
+public enum DataScopeEnum implements IBaseEnum<Integer> {
     /**
      * value 越小，数据权限范围越大
      */
@@ -25,7 +25,7 @@ public enum DataPermissionEnum implements IBaseEnum<Integer> {
     @Getter
     private String label;
 
-    DataPermissionEnum(Integer value, String label) {
+    DataScopeEnum(Integer value, String label) {
         this.value = value;
         this.label = label;
     }

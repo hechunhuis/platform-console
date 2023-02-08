@@ -1,0 +1,4 @@
+com.platform.common.security.service.PermissionService
+com.platform.common.security.config.ResourceServerConfig
+com.platform.common.security.exception.MyAccessDeniedHandler
+com.platform.common.security.exception.MyAuthenticationEntryPoint
