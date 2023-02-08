@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: platform-ums
+  profiles:
+    active: dev

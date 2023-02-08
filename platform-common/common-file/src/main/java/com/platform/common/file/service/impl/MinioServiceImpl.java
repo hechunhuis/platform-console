@@ -131,7 +131,6 @@ public class MinioServiceImpl implements FileService, InitializingBean {
      * 删除文件
      *
      * @param filePath 文件路径
-     *                 https://oss.youlai.tech/default/2022/11/20/test.jpg
      * @return
      */
     @Override
