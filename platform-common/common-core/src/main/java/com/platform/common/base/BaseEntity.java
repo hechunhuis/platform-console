@@ -10,7 +10,7 @@ import java.time.LocalDateTime;
 
 /**
  * @ClassName BaseEntity
- * @Description TODO
+ * @Description 基础实体类
  * @Author hechunhui
  * @Date 2023/2/7 16:59
  * @Version 1.0
