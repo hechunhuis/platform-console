@@ -1,0 +1,2 @@
+com.platform.common.file.service.impl.MinioServiceImpl
+com.platform.common.file.controller.FileController
