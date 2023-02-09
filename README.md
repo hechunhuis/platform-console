@@ -21,10 +21,10 @@ platform-console
 
 1. 启动Nacos<br/>
    在IDEA打开命令行终端Terminal<br/>
-   输入 <code>cd middleware/nacos/bin</code> 切换到Nacos的bin目录<br>
-   执行 <code>startup -m standalone</code> 启动单机版Nacos服务
+   输入 `cd middleware/nacos/bin` 切换到Nacos的bin目录<br>
+   执行 `startup -m standalone` 启动单机版Nacos服务
 2. 启动服务<br/>
-   <code>platform-gateway</code> 模块的启动类 GatewayApplication 启动网关<br/>
-   <code>platform-auth</code> 模块的启动类 AuthApplication 启动认证中心<br/>
-   <code>platform-system</code> -> <code>system-boot</code> 模块的启动类 SystemApplication 启动系统服务<br/>
-   基础服务启动完成，其他服务按需启动，步骤与<code>platform-system</code>相同<br/>
+   `platform-gateway` 模块的启动类 GatewayApplication 启动网关<br/>
+   `platform-auth` 模块的启动类 AuthApplication 启动认证中心<br/>
+   `platform-system` -> `system-boot` 模块的启动类 SystemApplication 启动系统服务<br/>
+   基础服务启动完成，其他服务按需启动，步骤与`platform-system`相同<br/>
