@@ -8,7 +8,7 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
  * @author : tomato<hechunhui_email@163.com>
  * @date : 2022/11/12 20:45
  * @className : GateWayApplication
- * @description: TODO
+ * @description: 网关应用
  */
 @SpringBootApplication
 @EnableDiscoveryClient
